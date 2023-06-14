@@ -1,0 +1,24 @@
+<app-navadminclient></app-navadminclient>
+<div class="container">
+    <div class="row g-5">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-5">
+                <hr>
+                <div *ngFor="let i of data" class="col col-12 col-sm-12 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">First name:{{i.clientfrstname}} </h5>
+                            <h5 class="card-title">Last name:{{i.clientlstname}} </h5>
+                            <h5 class="card-title">Dob:{{i.clientdob}} </h5>
+                            <h5 class="card-title">Age:{{i.clientage}} </h5>
+                            <h5 class="card-title">Number:{{i.clientphno}} </h5>
+                            <h5 class="card-title">Email:{{i.clientemail}} </h5>
+                            <h5 class="card-title">Sex:{{i.clientsex}} </h5>
+                            <h5 class="card-title">Address:{{i.clientaddress}} </h5>
+                          </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

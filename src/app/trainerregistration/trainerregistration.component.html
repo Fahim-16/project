@@ -1,0 +1,87 @@
+<app-navtrainerregistration></app-navtrainerregistration>
+<div class="container">
+    
+    <div class="row">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+
+
+            <div class="row g-5">   
+            <h1 align="center">TRAINER</h1>
+            <hr>
+            <form #formnew="ngForm" (ngSubmit)="trainerregistration()">
+           
+                <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                  <label for="" class="form-label">First Name</label> 
+                  <input type="text" class="form-control"[(ngModel)]="trainreg.trainerFrstname" name="frstname">
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                  <label for="" class="form-label">Last Name</label>
+                <input type="text" class="form-control" [(ngModel)]="trainreg.trainerLstname" name="lstname">
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">Date Of Birth</label>
+                     <input type="date" name="" id="" class="form-control" [(ngModel)]="trainreg.trainerDob" name="dob">
+                </div>
+                
+
+                <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                  <label for="" class="form-label">Age</label> 
+                  <input type="text" class="form-control"[(ngModel)]="trainreg.trainerAge" name="age"> 
+                </div>
+
+
+                <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">Phone Number</label> 
+                    <input type="text" class="form-control" [(ngModel)]="trainreg.trainerPhno" name="phnnum"> 
+                </div>
+
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                  <label for="" class="form-label">Email</label>
+                  <input type="email" class="form-control" [(ngModel)]="trainreg.trainerEmail" name="email">
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                  <label for="" class="form-label">Sex</label> 
+                  <select name="" id="" class="form-control"[(ngModel)]="trainreg.trainerSex" name="sex">
+                    <option value="select">select</option>
+                    <option value="MALE">MALE</option>
+                    <option value="FEMALE">FEMALE</option>
+                    <option value="OTHERS">OTHERS</option>
+                  </select>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">Address</label> 
+                    <textarea name="" id="" cols="10" rows="5" class="form-control" [(ngModel)]="trainreg.trainerAddress" name="address"></textarea>
+
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">Qualifications</label>
+                    <input type="text" class="form-control" [(ngModel)]="trainreg.trainerQualifiacation" name="qualy">
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                <label class="form-label" for="customFile">Upload Your Certificates</label>
+                <input type="file" class="form-control" id="customFile" [(ngModel)]="trainreg.trainerCertificate" name="certificate" />
+               </div>
+          <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+          <label for="" class="form-label">Username</label> 
+          <input type="text" class="form-control"[(ngModel)]="trainreg.trainerusername" name="username">
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+          <label for="" class="form-label">Password</label> 
+          <input type="password" class="form-control"[(ngModel)]="trainreg.trainerpassword" name="password">
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+          <label for="" class="form-label">Confirm Password</label> 
+          <input type="password" class="form-control"[(ngModel)]="trainreg.trainerconfirmpassword" name="cnpassword">
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+         <button  class="btn btn-success">Submit</button>
+        </div>
+            </form>
+        </div>
+    </div>
+</div>

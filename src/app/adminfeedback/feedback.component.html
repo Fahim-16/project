@@ -1,0 +1,19 @@
+<app-navadminfeed></app-navadminfeed>
+<div class="container">
+    <div class="row g-5">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-5">
+                <hr>
+                <div *ngFor="let i of data" class="col col-12 col-sm-12 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Name:{{i.writename}}</h5>
+                            <h5 class="card-title">Trainer Name:{{i.writetrainername}}</h5>
+                            <h5 class="card-title">Feedback:{{i.writeback}}</h5>
+                          </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

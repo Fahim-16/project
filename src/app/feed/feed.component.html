@@ -1,0 +1,26 @@
+<app-navfeedback></app-navfeedback>
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-3">
+                <form #formnew="ngForm" (ngSubmit)="feed()">
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="" class="formlabel">Name</label>
+                    <input type="text" class="form-control"[(ngModel)]="write.writename" name="name">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="" class="form-label">Trainers Name</label>
+                    <input type="text" class="form-control"[(ngModel)]="write.writetrainername" name="trainername">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="" class="form-label">Feedback</label>
+                    <textarea name="" id="" cols="30" rows="10" class="form-control"[(ngModel)]="write.writeback" name="write"></textarea>
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <button class="btn btn-success">Submit</button>
+                </div>
+            </form>
+            </div>
+        </div>
+    </div>
+</div>

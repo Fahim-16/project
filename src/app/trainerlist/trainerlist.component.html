@@ -1,0 +1,22 @@
+<app-navtrainerlist></app-navtrainerlist>
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-5">
+                <h1 align="center">Availabe Trainers</h1>
+                <div *ngFor="let i of data" class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                  <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title"> {{i.trainerFrstname}} </h5>
+                      <h5 class="card-title">{{i.trainerLstname}} </h5>
+                      <h5 class="card-title">{{i.trainerAge}} </h5>
+                      <h5 class="card-title">{{i.trainerPhno}} </h5>
+                      <h5 class="card-title">{{i.trainerEmail}} </h5>
+                      <h5 class="card-title">{{i.trainerSex}} </h5>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

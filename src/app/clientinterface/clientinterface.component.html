@@ -1,0 +1,82 @@
+<app-navclientinterface></app-navclientinterface>
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-3">
+              <h1>WELCOME</h1>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                  <div class="card" style="width: 18rem;">
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">Client Name</li>
+                    </ul>
+                  </div>
+                </div>
+                <h1>Choose Your Plan</h1>
+                <hr>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                          <img src="https://i.insider.com/5b64724bbda1c718008b4582?width=700" class="card-img-top" alt="...">
+                          <h5 class="card-title">With Trainer</h5>
+                          <h6 class="card-subtitle mb-2 text-muted"></h6>
+                          <p class="card-text">You will be assisted with a trainer.</p>
+                          <a href="/trainlist" class="card-link">View Trainer</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                          <img src="https://s3.amazonaws.com/images.gearjunkie.com/uploads/2021/01/Converted-NTB15019_Lifestyle_SLCDay210251-700x525.jpg"
+                          class="card-img-top" alt="...">
+                          <h5 class="card-title">Without Trainer</h5>
+                          <h6 class="card-subtitle mb-2 text-muted"></h6>
+                          <p class="card-text">Preset workout will be available you can refer it start your workout.</p>
+                          <a href="/withouttrainer" class="card-link">View Workouts</a>
+                          
+                        </div>
+                      </div>
+                </div>
+                <form #formname="ngForm" (ngSubmit)="workoutdetails()" >
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                  <label for="" class="form-label">
+                    If need trainer enter name of the trainer after viewing the trainers list
+                  </label>
+                  <input type="text" class="form-control">
+                </div>
+                <hr/>
+                <h1>Enter the workout details</h1>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                  <label for="" class="form-label">Enter Date</label>
+                  <input type="date" class="form-control" [(ngModel)]="workout.workDate" name="date">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                  <label for="" class="form-label">Enter Trainers Name</label>
+                  <input type="text" class="form-control"[(ngModel)]="workout.workTrainername" name="trainername">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                  <label for="" class="form-label">Enter Your Name</label>
+                  <input type="text" class="form-control"[(ngModel)]="workout.workYourname" name="trainername">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                  <label for="" class="form-label">Exercise name</label>
+                  <input type="text" class="form-control" [(ngModel)]="workout. workExersice" name="exercise">
+
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                  <label for="" class="form-label">No of sets</label>
+                  <input type="text" class="form-control" [(ngModel)]="workout.workSet"name="set">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                  <label for="" class="form-label">Weight pulled in each set</label>
+                  <input type="text" class="form-control" [(ngModel)]="workout.workWeight"name="weight">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                 
+                  <button class="btn btn-success">Submit</button>
+                </div>
+              </form>
+            </div>
+        </div>
+    </div>
+</div>
